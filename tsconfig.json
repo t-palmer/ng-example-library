@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-example-library": [
+        "dist/ng-example-library"
+      ],
+      "ng-example-library/*": [
+        "dist/ng-example-library/*"
+      ]
+    }
   }
 }

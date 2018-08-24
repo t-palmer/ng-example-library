@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "ng-example-library": {
+      "root": "projects/ng-example-library",
+      "sourceRoot": "projects/ng-example-library/src",
+      "projectType": "library",
+      "prefix": "exam",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-example-library/tsconfig.lib.json",
+            "project": "projects/ng-example-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ng-example-library/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-example-library/src/test.ts",
+            "tsConfig": "projects/ng-example-library/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-example-library/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-example-library/tsconfig.lib.json",
+              "projects/ng-example-library/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-example-library-app"

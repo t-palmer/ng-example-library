@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class NgExampleLibraryService {
 
   constructor() { }
+
+  getData() {
+    return 'NgExampleLibraryService';
+  }
 }

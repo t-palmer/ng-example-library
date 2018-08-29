@@ -6,7 +6,7 @@ import { NgExampleLibraryService } from 'ng-example-library';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'ng-example-library-app';
   serviceData = '';
 

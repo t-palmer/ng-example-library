@@ -1,6 +1,14 @@
 {
-  "name": "ng-example-library-app",
-  "version": "1.1.0",
+  "name": "ng-example-library",
+  "version": "1.2.0",
+  "description": "This is a simple example Angular Library published to npm.",
+  "keywords" :["Angular","Library"],
+  "license" : "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/t-palmer/ng-example-library"
+  },
+  "homepage" :"https://blog.angularindepth.com/the-angular-library-series-publishing-ce24bb673275",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
